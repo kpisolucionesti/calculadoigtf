@@ -5,7 +5,7 @@ services:
     container_name: frontapp
     entrypoint: /bin/sh
     ports:
-      - 8000:8000
+      - 8080:8080
     working_dir: /srv/app
     volumes:
       - .:/srv/app
