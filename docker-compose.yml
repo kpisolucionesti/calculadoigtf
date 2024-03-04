@@ -1,9 +1,15 @@
 version: "3.8"
 services:
   calculadora:
-    image: kpisoluciones/calculadoraigtf
+    image: node:alpine
+    container_name: frontapp
+    entrypoint: /bin/sh
     ports:
-      - 8080:8080
+      - 8000:8000
+    working_dir: /srv/app
     volumes:
-      - .:/app
+      - type: bind
+        source: ./
+        target: /srv/app
+    tty: true
     
