@@ -4,7 +4,7 @@ services:
     image: node:18-alpine
     container_name: frontapp
     entrypoint: /bin/sh
-    command: -c "yarn && yarn run dev"
+    command: "yarn && yarn run dev"
     ports:
       - 8080:8080
     working_dir: /srv/app
