@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   calculadora:
-    image: node:alpine
+    image: kpisoluciones/calculadoraigtf
     container_name: frontapp
     entrypoint: /bin/sh
     ports:
