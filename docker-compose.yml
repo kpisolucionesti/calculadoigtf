@@ -3,8 +3,8 @@ services:
   calculadora:
     image: node:18-alpine
     container_name: frontapp
-    entrypoint: /bin/sh
-    command: "yarn && yarn run dev"
+    #entrypoint: /bin/sh
+    command: sh -c "npm install --global yarn && yarn && yarn run dev"
     ports:
       - 8080:8080
     working_dir: /srv/app
